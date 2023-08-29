@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f5f0ec;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-container {
+  padding: 0 5vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  padding: 100px 0;
+}
+section .section-header {
+  margin-bottom: 50px;
+}
+
+.absolute {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  z-index: 1;
+}
+
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: "all 0.25s ease-in-out";
+  background-color: #191919;
+  color: #dbd8d6;
+}
+.loader-wrapper h1 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+}
+.loader-wrapper h2 {
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  font-family: "Bodoni Moda", serif;
+  font-style: italic;
+  margin-top: 10px;
+}/*# sourceMappingURL=home.css.map */
