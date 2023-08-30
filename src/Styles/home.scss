@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap");
 
 $bg-color: #f5f0ec;
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: $bg-color;
 }
 
@@ -35,17 +35,4 @@ section {
   transition: "all 0.25s ease-in-out";
   background-color: #191919;
   color: #dbd8d6;
-  h1 {
-    font-size: 1.5vw;
-    text-transform: uppercase;
-    font-family: "Bai Jamjuree", sans-serif;
-    font-weight: 600;
-  }
-  h2 {
-    font-size: 1.5vw;
-    text-transform: uppercase;
-    font-family: "Bodoni Moda", serif;
-    font-style: italic;
-    margin-top: 10px;
-  }
 }

@@ -6,15 +6,15 @@ export default function Featured() {
 
   const [firstUrl, secondUrl] = photos
   return (
-    <section className='featured-section'>
+    <section className='featured-section' data-scroll-section>
       
       <div className="featured-row-layout">
         <h6>green</h6>
-        <img src={firstUrl} alt="" />
+        <img src={firstUrl} alt="" data-scroll/>
       </div>
       <div className="featured-column-layout">
         <h6>Lily</h6>
-        <img src={secondUrl} alt="" />
+        <img src={secondUrl} alt="" data-scroll/>
       </div>
     </section>
   )
