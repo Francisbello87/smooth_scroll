@@ -101,10 +101,10 @@ useLocoScroll()
           scroller: "#main-container",
           pin: true,
           scrub: 0.5,
-          markers: true,
+          // markers: true,
           snap: 1 / (sections.length - 1),
           end: () => `+=${ref.current.offsetWidth}`,
-          // end:'top top'
+        
         },
       });
       ScrollTrigger.refresh();
