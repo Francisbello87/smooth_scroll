@@ -6,6 +6,9 @@ import cn from "classnames";
 
 import "./style.scss";
 import useOnScreen from "../hooks/useOnSceen";
+import useLocoScroll from "../hooks/useLocoScroll";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const images = [
   {
@@ -79,7 +82,7 @@ function GalleryItem({
 
 export default function Gallery({ src, index, columnOffset }) {
   const [activeImage, setActiveImage] = useState(1);
-
+useLocoScroll()
   const ref = useRef();
 
   useEffect(() => {
@@ -100,7 +103,8 @@ export default function Gallery({ src, index, columnOffset }) {
           scrub: 0.5,
           markers: true,
           snap: 1 / (sections.length - 1),
-          end: () => `+=${ref.current.clientWidth}`,
+          end: () => `+=${ref.current.offsetWidth}`,
+          // end:'top top'
         },
       });
       ScrollTrigger.refresh();
@@ -121,7 +125,7 @@ export default function Gallery({ src, index, columnOffset }) {
         </div>
         {images.map((image, index) => (
           <GalleryItem
-            key={src}
+            key={image.src}
             index={index}
             {...image}
             updateActiveImage={handleUpdateActiveImage}
