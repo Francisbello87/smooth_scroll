@@ -2,13 +2,11 @@
 body {
   font-family: "Lato", sans-serif;
   background-color: #f5f0ec;
-  width: 100vw;
   height: 100vh;
 }
 
 .main-container {
   padding: 0 5vw;
-  width: 100vw;
   height: 100vh;
 }
 

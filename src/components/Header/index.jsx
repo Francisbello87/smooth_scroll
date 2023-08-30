@@ -1,7 +1,9 @@
-import React from 'react'
+import './style.scss'
 
 export default function Header() {
   return (
-    <div>index</div>
+    <section className=" header-container">
+      <h1 id="header-text">Welcome to Greenify</h1>
+    </section>
   )
 }
